@@ -38,9 +38,9 @@ initrd16 /boot/netboot.xyz-initrd
 }
 " > /etc/grub.d/40_custom
 
-echo "GRUB_TIMEOUT=60" >> /etc/default/grub
+sed -i '/^GRUB_TIMEOUT/d' /etc/default/grub
 
-sort -n /etc/default/grub | uniq
+echo "GRUB_TIMEOUT=60" >> /etc/default/grub
 
 grub2-mkconfig -o /etc/grub2.cfg
 
