@@ -10,9 +10,9 @@ echo '=========================='
 echo ''
 echo ''
 
-sleep 3s
+sleep 2s
 
-yum -y update
+yum -y install curl
 
 curl https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn -o /boot/generic-ipxe.lkrn
 
@@ -42,6 +42,6 @@ echo ''
 echo ''
 echo ''
 echo ''
-echo '配置已完成，请连接VNC后输入重启命令：reboot';
+echo '配置已完成，请连接VNC后输入重启命令：reboot'
 echo ''
 echo ''
