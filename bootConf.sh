@@ -38,8 +38,6 @@ sed -i '/^GRUB_TIMEOUT/d' /etc/default/grub
 
 echo "GRUB_TIMEOUT=60" >> /etc/default/grub
 
-rm -fr /etc/grub2.cfg
-
 grub2-mkconfig -o /etc/grub2.cfg
 
 echo ''
