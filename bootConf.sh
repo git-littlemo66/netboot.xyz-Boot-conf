@@ -27,12 +27,16 @@ chain --autofree https://boot.netboot.xyz
 " > /boot/netboot.xyz-initrd
 
 echo "
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
 menuentry 'netboot.xyz' {
 set root='hd0,msdos1'
 linux16 /boot/generic-ipxe.lkrn
 initrd16 /boot/netboot.xyz-initrd
 }
-" >> /etc/grub.d/40_custom
+" > /etc/grub.d/40_custom
 
 echo "GRUB_TIMEOUT=60" >> /etc/default/grub
 
