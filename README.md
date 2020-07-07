@@ -13,6 +13,20 @@
 
 ----
 
+#### 注意和建议
+
+1. 本脚本仅在`Linux CentOS7`下测试通过，其他版本系统未知！！！
+解决方法：
+如果你当前的服务器系统不是`CentOS7`，建议你先用你当前的服务器厂商面板重装系统为`CentOS7`，然后再运行本脚本。
+
+
+2. 成功运行脚本并进入`netboot.xyz`后, 有可能不能自动获取到网络配置（DHCP）
+解决方法：
+重启一遍系统，再次进入`netboot.xyz`，然后就自动获取到网络配置了，亲测可以！（在阿里云测试的）
+或者
+当然，如果实在获取不到网络配置，`netboot.xyz`会要求你手动输入网络配置，你直接填好即可。
+
+
 #### 食用方法：
 ```
 curl -O https://raw.githubusercontent.com/moqu66/netboot.xyz-Boot-conf/master/bootConf.sh && chmod +x bootConf.sh && bash bootConf.sh
