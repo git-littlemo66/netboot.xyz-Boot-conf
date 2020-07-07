@@ -1,8 +1,16 @@
 #!/bin/bash
 
-echo "脚本来自：sm.link"
+clear
 
-sleep s 3
+echo ''
+echo ''
+echo '=========================='
+echo '=====脚本来自：sm.link====='
+echo '=========================='
+echo ''
+echo ''
+
+sleep 3s
 
 yum -y update
 
@@ -30,4 +38,10 @@ echo "GRUB_TIMEOUT=60" >> /etc/default/grub
 
 grub2-mkconfig -o /etc/grub2.cfg
 
+echo ''
+echo ''
+echo ''
+echo ''
 echo '配置已完成，请连接VNC后输入重启命令：reboot';
+echo ''
+echo ''
