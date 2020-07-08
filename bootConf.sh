@@ -27,7 +27,7 @@ chain --autofree https://boot.netboot.xyz
 EOF
 
 cat > /etc/grub.d/40_custom << EOF
-exec tail -n +3 $0
+exec tail -n +3 \$0
 # This file provides an easy way to add custom menu entries.  Simply type the
 # menu entries you want to add after this comment.  Be careful not to change
 # the 'exec tail' line above.
