@@ -17,11 +17,8 @@
 
 #### 食用方法：
 ```
-# centos
-curl -O https://raw.githubusercontent.com/moqu66/netboot.xyz-Boot-conf/master/centos.sh && chmod +x centos.sh && ./centos.sh
-
-# debian
-curl -O https://raw.githubusercontent.com/moqu66/netboot.xyz-Boot-conf/master/debian.sh && chmod +x debian.sh && ./debian.sh
+# 支持系统 centos|debian|ubuntu
+curl -O https://raw.githubusercontent.com/moqu66/netboot.xyz-Boot-conf/master/bootConf.sh && chmod +x bootConf.sh && ./bootConf.sh
 ```
 
 运行完毕后，请连接VNC，然后输入命令 `reboot` 重启机器，然后你就可以在引导页面看到 `netboot.xyz` 了
