@@ -49,7 +49,7 @@ imgfree
 :retry
 ifconf --configurator dhcp || goto retry
 set dns 8.8.8.8
-ifopen net0
+ifopen
 chain --autofree https://boot.netboot.xyz
 EOF
 
