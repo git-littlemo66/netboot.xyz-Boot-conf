@@ -46,8 +46,10 @@ cat > /boot/netboot.xyz-initrd << EOF
 #!ipxe
 #/boot/netboot.xyz-initrd
 imgfree
+:retry
 ifconf --configurator dhcp || goto retry
 set dns 8.8.8.8
+ifopen net0
 chain --autofree https://boot.netboot.xyz
 EOF
 
