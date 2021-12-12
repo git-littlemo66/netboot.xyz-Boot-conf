@@ -1,5 +1,17 @@
 #!/bin/bash
 
+clear
+
+echo ''
+echo ''
+echo '=========================='
+echo '=====脚本来自：littlemo.cc====='
+echo '=========================='
+echo ''
+echo ''
+
+sleep 2s
+
 apt-get install wget -y
 
 find /boot -name "netboot.xyz.lkrn" -exec rm -fr {} \;
