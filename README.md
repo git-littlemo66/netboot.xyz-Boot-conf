@@ -13,16 +13,13 @@
 
 ----
 
-#### 注意和建议
-本脚本仅在`Linux CentOS7`下测试通过，其他版本系统未知！！！  
-解决方法：  
-如果你当前的服务器系统不是`CentOS7`，建议你先用你当前的服务器厂商面板重装系统为`CentOS7`，然后再运行本脚本。
-
-----
-
 #### 食用方法：
 ```
-curl -O https://raw.githubusercontent.com/moqu66/netboot.xyz-Boot-conf/master/bootConf.sh && chmod +x bootConf.sh && bash bootConf.sh
+# centos
+curl -O https://raw.githubusercontent.com/moqu66/netboot.xyz-Boot-conf/master/centos.sh && chmod +x centos.sh && ./centos.sh
+
+# debian
+curl -O https://raw.githubusercontent.com/moqu66/netboot.xyz-Boot-conf/master/debian.sh && chmod +x debian.sh && ./debian.sh
 ```
 
 运行完毕后，请连接VNC，然后输入命令 `reboot` 重启机器，然后你就可以在引导页面看到 `netboot.xyz` 了
