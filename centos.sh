@@ -5,7 +5,7 @@ clear
 echo ''
 echo ''
 echo '=========================='
-echo '=====脚本来自：sm.link====='
+echo '=====脚本来自：littlemo.cc====='
 echo '=========================='
 echo ''
 echo ''
