@@ -25,3 +25,13 @@ curl -O https://raw.githubusercontent.com/moqu66/netboot.xyz-Boot-conf/master/de
 ```
 
 运行完毕后，请连接VNC，然后输入命令 `reboot` 重启机器，然后你就可以在引导页面看到 `netboot.xyz` 了
+
+阿里云轻量云服务器演示：
+
+![netboot.xy](https://www.littlemo.cc/usr/uploads/2020/07/1777494340.png)
+![netboot.xy](https://www.littlemo.cc/usr/uploads/2020/07/3213980517.png)
+![netboot.xy](https://www.littlemo.cc/usr/uploads/2020/07/2271931874.png)
+![netboot.xy](https://www.littlemo.cc/usr/uploads/2020/07/607449655.png)
+![netboot.xy](https://www.littlemo.cc/usr/uploads/2020/07/3322952301.png)
+![netboot.xy](https://www.littlemo.cc/usr/uploads/2020/07/3708751681.png)
+![netboot.xy](https://www.littlemo.cc/usr/uploads/2020/07/3674899591.png)
