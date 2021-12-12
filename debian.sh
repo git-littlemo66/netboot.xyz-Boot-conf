@@ -53,4 +53,10 @@ echo "GRUB_TIMEOUT=60" >> /etc/default/grub
 
 grub2-mkconfig -o /etc/grub2.cfg
 
-echo "配置完成，连接VNC后重启机器即可在启动菜单选择netboot.xy"
+echo ''
+echo ''
+echo ''
+echo ''
+echo '配置已完成，请连接VNC后输入重启命令：reboot'
+echo ''
+echo ''
