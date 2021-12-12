@@ -12,9 +12,15 @@ echo ''
 
 sleep 2s
 
-yum -y install curl
+yum update -y && yum install wget-y
 
-curl https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn -o /boot/generic-ipxe.lkrn
+find /boot -name "netboot.xyz.lkrn" -exec rm -fr {} \;
+
+find /boot -name "netboot.xyz-initrd" -exec rm -fr {} \;
+
+cd /boot
+
+wget https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn
 
 cat > /boot/netboot.xyz-initrd <<EOF
 #!ipxe
@@ -27,14 +33,14 @@ chain --autofree https://boot.netboot.xyz
 EOF
 
 cat > /etc/grub.d/40_custom << EOF
-exec tail -n +3 \$0
+#!/bin/sh
+exec tail -n +3 $0
 # This file provides an easy way to add custom menu entries.  Simply type the
 # menu entries you want to add after this comment.  Be careful not to change
 # the 'exec tail' line above.
-
 menuentry 'netboot.xyz' {
 set root='hd0,msdos1'
-linux16 /boot/generic-ipxe.lkrn
+linux16 /boot/netboot.xyz.lkrn
 initrd16 /boot/netboot.xyz-initrd
 }
 EOF
