@@ -6,6 +6,8 @@
 
 如果你还不知道netboot.xyz是什么，请先移步到 https://github.com/netbootxyz/netboot.xyz 查看后在使用本脚本。
 
+![netboot.xy](https://netboot.xyz/assets/images/netboot.xyz-d976acd5e46c61339230d38e767fbdc2.gif)
+
 #### 服务器需要满足以下条件：  
 1.KVM虚拟化的VPS或者独立服务器  
 2.网络支持DHCP(不是必须的)  
