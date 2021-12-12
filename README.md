@@ -13,11 +13,12 @@
 2.网络支持DHCP(不是必须的)  
 3.可以使用VNC控制你的机器  
 
+目前脚本支持在 `Cetnos` | `Debian` | `Ubuntu` 系统上运行。
+
 ----
 
 #### 食用方法：
 ```
-# 支持系统 centos|debian|ubuntu
 curl -O https://raw.githubusercontent.com/moqu66/netboot.xyz-Boot-conf/master/bootConf.sh && chmod +x bootConf.sh && ./bootConf.sh
 ```
 
