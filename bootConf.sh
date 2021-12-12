@@ -69,7 +69,11 @@ sed -i '/^GRUB_TIMEOUT/d' /etc/default/grub
 
 echo "GRUB_TIMEOUT=60" >> /etc/default/grub
 
-grub2-mkconfig -o /etc/grub2.cfg
+if [[ "${release}" == "centos" ]]; then
+  grub2-mkconfig -o /etc/grub2.cfg
+elif [[ "${release}" == "debian" || "${release}" == "ubuntu" ]]; then
+  apt-get -y update && apt-get -y install wget
+fi
 
 echo ''
 echo ''
