@@ -20,8 +20,9 @@
 #### 食用方法：
 ```
 curl -O https://raw.githubusercontent.com/moqu66/netboot.xyz-Boot-conf/master/bootConf.sh && chmod +x bootConf.sh && ./bootConf.sh
-
-# 国内备用地址 coding
+```
+#### 国内备用地址 coding
+```
 curl -O https://one-mo.coding.net/p/netboot.xyz-boot-conf/d/netboot.xyz-Boot-conf/git/raw/master/bootConf.sh && chmod +x bootConf.sh && ./bootConf.sh
 ```
 
