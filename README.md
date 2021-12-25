@@ -13,7 +13,7 @@
 2.网络支持DHCP  
 3.可以使用VNC控制你的机器  
 
-目前脚本支持在 `Cetnos` | `Debian` | `Ubuntu` 系统上运行。
+目前脚本仅在 `Cetnos7` 、 `Debian10/11` 系统上测试运行通过（`Ubuntu`应该也是没问题的，毕竟是基于`Debian`）。
 
 ----
 
