@@ -60,7 +60,7 @@ exec tail -n +3 \$0
 # menu entries you want to add after this comment.  Be careful not to change
 # the 'exec tail' line above.
 menuentry 'netboot.xyz' {
-set root='hd0,msdos1'
+set root='hd0,gpt2'
 linux16 /boot/netboot.xyz.lkrn
 initrd16 /boot/netboot.xyz-initrd
 }
